@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+img {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    background: url('../img/m.png') no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    color: #aeaeaa;
+}
+
+
+.box {
+    background: #eee;
+    text-align: center;
+    padding: 4rem;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 50px;
+    margin-top: 8rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin: 0 auto 2rem auto;
+
+}
+
+.profile span {
+    font-size: 24px;
+}
+
+.profile p {
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+
+.redes-sociais li {
+    margin-right: 1rem;
+}
+
+@keyframes Daniel {
+  0% {text-shadow: 2px 1px cyan;}
+  50%  {text-shadow: 2px 1px rgb(4, 247, 154);}
+  100% {text-shadow:2px 1px cyan;}
+}
+
+.nome {
+    text-shadow: 2px 1px cyan;
+    animation-name: Daniel;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.Informações {
+    max-width: 886px;
+    box-sizing: border-box;
+}
+
+.Informações ul {
+    margin-top: 3rem;
+}
+
+.Informações li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    text-align: left;
+    gap: 3rem;
+    color: #606060;
+}
+.Informações li + li {
+    margin-top: 2rem;
+
+}
+
+.Informações img {
+    border-radius: 10px;
+}
+
+.Informações h2 {
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 16px black;
+    margin: 50vh 0;
+}
+
+@keyframes Foto {
+    0%  {background-image: url("../img/praia.jpg");}
+    33%  {background-image: url("../img/boliche.jpg");}
+     66% {background-image: url("../img/bike.jpg");}
+     100%{background-image: url("../img/praia.jpg");}
+    
+}
+
+.oi {
+    width:450px;
+    height:450px;
+    border-radius: 1%;
+    background-size: 450px 450px;
+    animation-name: Foto;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes descricao {
+    0%  {background-image: url("../img/descricao.png");}
+    33% {background-image: url("../img/dn.jpg");}
+    66% {background-image: url("../img/dac.jpg");}
+     100%{background-image: url("../img/descricao.png");}
+    
+}
+.desc {
+    width:450px;
+    height:450px;
+    border-radius: 1%;
+    background-size: 450px 450px;
+    animation-name: descricao;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
